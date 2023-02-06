@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Person>
+<h1>View component Invoked</h1>
+<table class="table w-80">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody >
+        @foreach (var item in Model)
+        {
+            <tr class="list">
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>

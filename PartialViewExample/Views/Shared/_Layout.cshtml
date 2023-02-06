@@ -14,7 +14,9 @@
             </div>
             <ul>
                 <li><a href="~/">Home</a></li>
-                <li><a href="~/About">About</a></li>
+                <li><a href="~/Home/About">About</a></li>
+                <li><a href="~/Products">Products</a></li>
+                <li><a href="~/Products/About">About Products</a></li>
             </ul>
         </div>
     </div>
@@ -22,4 +24,5 @@
         @RenderBody()
     </div>
 </body>
+@RenderSection("Scripts", required: false)
 </html>
